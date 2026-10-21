@@ -181,6 +181,10 @@ export const Sidebar: React.FC = () => {
           <LogOut size={14} />
           <span>Keluar (Logout)</span>
         </button>
+
+        <div className="mt-2 text-[10px] text-center text-slate-400 font-mono">
+          v1.0.0 · Publikasi Vercel
+        </div>
       </div>
     </aside>
   );

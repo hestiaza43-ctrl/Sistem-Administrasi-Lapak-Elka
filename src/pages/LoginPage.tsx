@@ -180,6 +180,13 @@ export const LoginPage: React.FC = () => {
           <p className="text-[10px] text-center text-slate-400 mt-4 leading-relaxed">
             *Akun tersebut hanya untuk demonstrasi prototipe, bukan kredensial produksi. Acuan data: Lapak Elka 2026 (1).xlsx
           </p>
+
+          <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Status Deployment</span>
+            <span className="font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              Versi Publikasi v1.0.0 (Vercel Ready)
+            </span>
+          </div>
         </div>
       </div>
     </div>

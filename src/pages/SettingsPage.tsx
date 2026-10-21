@@ -139,6 +139,42 @@ export const SettingsPage: React.FC = () => {
           </button>
         </div>
       </div>
+
+      {/* Vercel Publication & Build Info Card */}
+      <div className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-xs space-y-4 text-xs">
+        <div className="flex items-center justify-between pb-3 border-b border-slate-100 font-bold text-slate-800 text-sm">
+          <div className="flex items-center gap-2">
+            <span className="w-6 h-6 rounded-lg bg-black text-white flex items-center justify-center font-black text-xs">▲</span>
+            <span>Status Publikasi & Deployment Vercel</span>
+          </div>
+          <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+            Production Ready
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+            <p className="text-[10px] uppercase font-bold text-slate-400">Versi Rilis</p>
+            <p className="font-mono font-bold text-slate-800 text-sm mt-0.5">v1.0.0</p>
+          </div>
+          <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+            <p className="text-[10px] uppercase font-bold text-slate-400">Target Framework</p>
+            <p className="font-bold text-slate-800 text-sm mt-0.5">Vite + React 19</p>
+          </div>
+          <div className="p-3 bg-slate-50 rounded-2xl border border-slate-100">
+            <p className="text-[10px] uppercase font-bold text-slate-400">Konfigurasi Routing</p>
+            <p className="font-bold text-emerald-700 text-sm mt-0.5">vercel.json SPA Rewrites</p>
+          </div>
+        </div>
+
+        <div className="p-3 bg-indigo-50/60 rounded-2xl border border-indigo-100 text-slate-600 space-y-1">
+          <p className="font-bold text-indigo-900 text-xs">Petunjuk Deploy ke Vercel:</p>
+          <p className="text-[11px]">1. Sambungkan repositori GitHub/GitLab ke Dashboard Vercel.</p>
+          <p className="text-[11px]">2. Vercel akan otomatis mendeteksi Framework Preset: <strong>Vite</strong>.</p>
+          <p className="text-[11px]">3. Build Command: <code className="bg-white px-1.5 py-0.5 rounded font-mono text-indigo-800 font-bold">npm run build</code>, Output Directory: <code className="bg-white px-1.5 py-0.5 rounded font-mono text-indigo-800 font-bold">dist</code>.</p>
+          <p className="text-[11px]">4. Klik <strong>Deploy</strong> dan aplikasi langsung live dengan URL kustom Anda.</p>
+        </div>
+      </div>
     </div>
   );
 };

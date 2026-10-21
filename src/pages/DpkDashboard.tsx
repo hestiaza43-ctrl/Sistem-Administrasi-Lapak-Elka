@@ -66,9 +66,9 @@ export const DpkDashboard: React.FC = () => {
       </div>
 
       {/* DPK 4 Core Stat Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 xl:gap-4">
         <StatsCard
-          title="Total Pendapatan Terverifikasi"
+          title="Total Pendapatan"
           value={stats.totalPenjualan}
           trend="+18.4%"
           isPositive={true}
@@ -77,11 +77,11 @@ export const DpkDashboard: React.FC = () => {
           variant="mint"
         />
         <StatsCard
-          title="Total Pengeluaran Kas"
+          title="Total Pengeluaran"
           value={stats.totalPengeluaran}
           trend="Terkendali"
           isPositive={true}
-          subtitle="Pagu Operasional Sesuai Budget"
+          subtitle="Pagu Operasional"
           icon={DollarSign}
           variant="coral"
         />
@@ -90,17 +90,17 @@ export const DpkDashboard: React.FC = () => {
           value={stats.totalLabaBersih}
           trend="+22.8%"
           isPositive={true}
-          subtitle="Setelah HPP & Operasional"
+          subtitle="Setelah HPP & Beban"
           icon={PieChart}
           variant="purple"
         />
         <StatsCard
-          title="Profit Margin Rata-rata"
+          title="Profit Margin"
           value={formatPercent(stats.profitMarginPercent)}
           isCurrency={false}
           trend="Target: >25%"
           isPositive={stats.profitMarginPercent >= 25}
-          subtitle="Kondisi Finansial Sangat Sehat"
+          subtitle="Kondisi Finansial Prima"
           icon={Scale}
           variant="indigo"
         />

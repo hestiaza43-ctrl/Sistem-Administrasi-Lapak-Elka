@@ -93,7 +93,7 @@ export const AdminDashboard: React.FC = () => {
       </div>
 
       {/* 8 Stats Cards Grid (Matching reference layout) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 xl:gap-4">
         <StatsCard
           title="Total Penjualan"
           value={stats.totalPenjualan}
@@ -108,7 +108,7 @@ export const AdminDashboard: React.FC = () => {
           value={stats.totalPemasukan}
           trend="+12.5%"
           isPositive={true}
-          subtitle="Kas Kecil & Rekening BRI"
+          subtitle="Kas & Giro BRI"
           icon={ArrowDownCircle}
           variant="cyan"
         />
@@ -117,7 +117,7 @@ export const AdminDashboard: React.FC = () => {
           value={stats.totalPengeluaran}
           trend="-4.2%"
           isPositive={true}
-          subtitle="Operasional, Gaji & Logistik"
+          subtitle="Operasional & Gaji"
           icon={ArrowUpCircle}
           variant="coral"
         />
@@ -126,7 +126,7 @@ export const AdminDashboard: React.FC = () => {
           value={stats.totalModalHPP}
           trend="+8.1%"
           isPositive={true}
-          subtitle="Modal Beli Barang Terjual"
+          subtitle="Modal Beli Barang"
           icon={Coins}
           variant="amber"
         />
@@ -140,12 +140,12 @@ export const AdminDashboard: React.FC = () => {
           variant="mint"
         />
         <StatsCard
-          title="Profit Margin Rata-rata"
+          title="Profit Margin"
           value={formatPercent(stats.profitMarginPercent)}
           isCurrency={false}
           trend="+3.4%"
           isPositive={true}
-          subtitle="Margin Penjualan Bersih"
+          subtitle="Margin Penjualan"
           icon={Percent}
           variant="indigo"
         />
@@ -161,7 +161,7 @@ export const AdminDashboard: React.FC = () => {
         <StatsCard
           title="Total Piutang Berjalan"
           value={stats.totalPiutang}
-          trend={`${sales.filter(s => s.sisaPiutang > 0).length} Invoice`}
+          trend={`${sales.filter(s => s.sisaPiutang > 0).length} Tagihan`}
           isPositive={stats.totalPiutang < 80000000}
           subtitle={`Hutang: ${formatRupiah(stats.totalHutang)}`}
           icon={Coins}

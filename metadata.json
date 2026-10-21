@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Informasi Laporan Penjualan Lapak Elka",
+  "description": "Sistem Pengelolaan Penjualan dan Laporan Keuangan Terintegrasi Lapak Elka 2026 dengan Multi-Role Admin, Staff, dan DPK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
